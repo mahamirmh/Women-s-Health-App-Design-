@@ -1,0 +1,61 @@
+@import './fonts.css';
+@import './theme.css';
+@import 'tailwindcss';
+
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FAF9F7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Syla Colors */
+:root {
+  --lavender: #B8A4D9;
+  --lavender-light: #D4C5F9;
+  --lavender-lighter: #EAE4F5;
+  --blush: #F4C2C2;
+  --blush-light: #FADEDE;
+  --cream: #FAF9F7;
+  --warm-white: #FFFCF9;
+  --text-primary: #4A4458;
+  --text-secondary: #827B8D;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lavender-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lavender);
+}
+
+/* Input focus styles */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--lavender);
+}
